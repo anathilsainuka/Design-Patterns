@@ -15,7 +15,7 @@ class USASocket {
 /*The adapter's charge() method calls the plugIn() method of USASocket,
 /thus adapting its interface to match the Device interface*/
 class USASocketAdapter implements Device {
-    private USASocket usaSocket;
+    private final USASocket usaSocket;
 
     public USASocketAdapter(USASocket usaSocket) {
         this.usaSocket = usaSocket;
